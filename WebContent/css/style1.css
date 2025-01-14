@@ -1,0 +1,71 @@
+body {
+    padding-bottom: 30px;
+    
+}
+h2{
+	padding-top: 20px;
+}
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 600px;
+    width: auto;
+}
+#btn1{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 150px;
+}
+
+
+.page-header {
+    margin-bottom: 20px;
+    
+}
+h2{
+	font-weight: 20px;
+}
+
+label.error-block {
+    color: red;
+    font-size: 11px;
+}
+
+input.error,
+textarea.error,
+select.error {
+    border-color: red;
+}
+
+input.mismatch,
+textarea.mismatch,
+select.mismatch {
+    border-color: orange;
+}
+
+input.valid,
+textarea.valid,
+select.valid {
+    border-color: green;
+}
+
+label.error {
+    color: red;
+}
+
+label.mismatch {
+    border-color: orange;
+}
+
+label.valid {
+    color: green;
+}

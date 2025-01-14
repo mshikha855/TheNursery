@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>TheNursery</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>Index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>Registrationservlet</display-name>
+    <servlet-name>Registrationservlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.Registrationservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registrationservlet</servlet-name>
+    <url-pattern>/Registrationservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FindAreaDetailsServlet</display-name>
+    <servlet-name>FindAreaDetailsServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FindAreaDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindAreaDetailsServlet</servlet-name>
+    <url-pattern>/FindAreaDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RegistrationServlet</display-name>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginDetailsServlet</display-name>
+    <servlet-name>LoginDetailsServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.LoginDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginDetailsServlet</servlet-name>
+    <url-pattern>/LoginDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ForgetpasswordServlet</display-name>
+    <servlet-name>ForgetpasswordServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.ForgetpasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgetpasswordServlet</servlet-name>
+    <url-pattern>/ForgetpasswordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/Error.jsp</location>
+  </error-page>
+  
+  <servlet>
+    <description></description>
+    <display-name>updateUserDetailsServlet</display-name>
+    <servlet-name>updateUserDetailsServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.updateUserDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateUserDetailsServlet</servlet-name>
+    <url-pattern>/updateUserDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SelectUserDetails</display-name>
+    <servlet-name>SelectUserDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.SelectUserDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectUserDetails</servlet-name>
+    <url-pattern>/SelectUserDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteUserDetails</display-name>
+    <servlet-name>DeleteUserDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteUserDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteUserDetails</servlet-name>
+    <url-pattern>/DeleteUserDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GetOtpServlet</display-name>
+    <servlet-name>GetOtpServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.GetOtpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetOtpServlet</servlet-name>
+    <url-pattern>/GetOtpServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>updatepassword</display-name>
+    <servlet-name>updatepassword</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.updatepassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updatepassword</servlet-name>
+    <url-pattern>/updatepassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditProfileServlet</display-name>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.EditProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <url-pattern>/EditProfileServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ChangepasswordServlet</display-name>
+    <servlet-name>ChangepasswordServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.ChangepasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangepasswordServlet</servlet-name>
+    <url-pattern>/ChangepasswordServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayCategoryDetails</display-name>
+    <servlet-name>DisplayCategoryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayCategoryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayCategoryDetails</servlet-name>
+    <url-pattern>/DisplayCategoryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>deleteCategoryServlet</display-name>
+    <servlet-name>deleteCategoryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.deleteCategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteCategoryServlet</servlet-name>
+    <url-pattern>/deleteCategoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InsertCategoryServlet</display-name>
+    <servlet-name>InsertCategoryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.InsertCategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertCategoryServlet</servlet-name>
+    <url-pattern>/InsertCategoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditCategoryServlet</display-name>
+    <servlet-name>EditCategoryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.EditCategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditCategoryServlet</servlet-name>
+    <url-pattern>/EditCategoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateCategoryDetailsServlet</display-name>
+    <servlet-name>UpdateCategoryDetailsServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateCategoryDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateCategoryDetailsServlet</servlet-name>
+    <url-pattern>/UpdateCategoryDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayCategory</display-name>
+    <servlet-name>DisplayCategory</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayCategory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayCategory</servlet-name>
+    <url-pattern>/DisplayCategory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InsertSubCategoryDetails</display-name>
+    <servlet-name>InsertSubCategoryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.InsertSubCategoryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertSubCategoryDetails</servlet-name>
+    <url-pattern>/InsertSubCategoryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayCategoryServlet</display-name>
+    <servlet-name>DisplayCategoryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayCategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayCategoryServlet</servlet-name>
+    <url-pattern>/DisplayCategoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplaySubCategoryDetails</display-name>
+    <servlet-name>DisplaySubCategoryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplaySubCategoryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplaySubCategoryDetails</servlet-name>
+    <url-pattern>/DisplaySubCategoryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteSubCategoryServlet</display-name>
+    <servlet-name>DeleteSubCategoryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteSubCategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteSubCategoryServlet</servlet-name>
+    <url-pattern>/DeleteSubCategoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditSubCategoryDetails</display-name>
+    <servlet-name>EditSubCategoryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.EditSubCategoryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditSubCategoryDetails</servlet-name>
+    <url-pattern>/EditSubCategoryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateSubCategoryServlet</display-name>
+    <servlet-name>UpdateSubCategoryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateSubCategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateSubCategoryServlet</servlet-name>
+    <url-pattern>/UpdateSubCategoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CategoryandSubcategoryDisplay</display-name>
+    <servlet-name>CategoryandSubcategoryDisplay</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.CategoryandSubcategoryDisplay</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryandSubcategoryDisplay</servlet-name>
+    <url-pattern>/CategoryandSubcategoryDisplay</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayProductServlet</display-name>
+    <servlet-name>DisplayProductServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayProductServlet</servlet-name>
+    <url-pattern>/DisplayProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteProductServlet</display-name>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/DeleteProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InsertProductServlet</display-name>
+    <servlet-name>InsertProductServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.InsertProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertProductServlet</servlet-name>
+    <url-pattern>/InsertProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FindSubCategoryDetails</display-name>
+    <servlet-name>FindSubCategoryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FindSubCategoryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindSubCategoryDetails</servlet-name>
+    <url-pattern>/FindSubCategoryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayOfferServlet</display-name>
+    <servlet-name>DisplayOfferServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayOfferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayOfferServlet</servlet-name>
+    <url-pattern>/DisplayOfferServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteOfferServlet</display-name>
+    <servlet-name>DeleteOfferServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteOfferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOfferServlet</servlet-name>
+    <url-pattern>/DeleteOfferServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InsertOfferServlet</display-name>
+    <servlet-name>InsertOfferServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.InsertOfferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertOfferServlet</servlet-name>
+    <url-pattern>/InsertOfferServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditOfferServlet</display-name>
+    <servlet-name>EditOfferServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.EditOfferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditOfferServlet</servlet-name>
+    <url-pattern>/EditOfferServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateOfferServlet</display-name>
+    <servlet-name>UpdateOfferServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateOfferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateOfferServlet</servlet-name>
+    <url-pattern>/UpdateOfferServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StoreAnswserDetails</display-name>
+    <servlet-name>StoreAnswserDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.StoreAnswserDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreAnswserDetails</servlet-name>
+    <url-pattern>/StoreAnswserDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchAvailableQuestionDetails</display-name>
+    <servlet-name>FetchAvailableQuestionDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchAvailableQuestionDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchAvailableQuestionDetails</servlet-name>
+    <url-pattern>/FetchAvailableQuestionDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchOfferServlet</display-name>
+    <servlet-name>FetchOfferServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchOfferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchOfferServlet</servlet-name>
+    <url-pattern>/FetchOfferServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchSubcategoryServlet</display-name>
+    <servlet-name>FetchSubcategoryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchSubcategoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchSubcategoryServlet</servlet-name>
+    <url-pattern>/FetchSubcategoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditProductDetails</display-name>
+    <servlet-name>EditProductDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.EditProductDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditProductDetails</servlet-name>
+    <url-pattern>/EditProductDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateProductServlet</display-name>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <url-pattern>/UpdateProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchProductDetails</display-name>
+    <servlet-name>FetchProductDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchProductDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchProductDetails</servlet-name>
+    <url-pattern>/FetchProductDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SelectedProductDetails</display-name>
+    <servlet-name>SelectedProductDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.SelectedProductDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectedProductDetails</servlet-name>
+    <url-pattern>/SelectedProductDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SelectGalleryDetails</display-name>
+    <servlet-name>SelectGalleryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.SelectGalleryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectGalleryDetails</servlet-name>
+    <url-pattern>/SelectGalleryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayGalleryDetails</display-name>
+    <servlet-name>DisplayGalleryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayGalleryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayGalleryDetails</servlet-name>
+    <url-pattern>/DisplayGalleryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InsertGalleryDetails</display-name>
+    <servlet-name>InsertGalleryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.InsertGalleryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertGalleryDetails</servlet-name>
+    <url-pattern>/InsertGalleryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchProductServlet</display-name>
+    <servlet-name>FetchProductServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchProductServlet</servlet-name>
+    <url-pattern>/FetchProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditGalleryDetails</display-name>
+    <servlet-name>EditGalleryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.EditGalleryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditGalleryDetails</servlet-name>
+    <url-pattern>/EditGalleryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateGalleryDetails</display-name>
+    <servlet-name>UpdateGalleryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateGalleryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateGalleryDetails</servlet-name>
+    <url-pattern>/UpdateGalleryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteGalleryServlet</display-name>
+    <servlet-name>DeleteGalleryServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteGalleryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteGalleryServlet</servlet-name>
+    <url-pattern>/DeleteGalleryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchGalleryDetails</display-name>
+    <servlet-name>FetchGalleryDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchGalleryDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchGalleryDetails</servlet-name>
+    <url-pattern>/FetchGalleryDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InsertCartServlet</display-name>
+    <servlet-name>InsertCartServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.InsertCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertCartServlet</servlet-name>
+    <url-pattern>/InsertCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchCartDetails</display-name>
+    <servlet-name>FetchCartDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchCartDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchCartDetails</servlet-name>
+    <url-pattern>/FetchCartDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteCartDetails</display-name>
+    <servlet-name>DeleteCartDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteCartDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCartDetails</servlet-name>
+    <url-pattern>/DeleteCartDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>PaytmServlet</display-name>
+    <servlet-name>PaytmServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.PaytmServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaytmServlet</servlet-name>
+    <url-pattern>/PaytmServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateShippingAddress</display-name>
+    <servlet-name>UpdateShippingAddress</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateShippingAddress</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateShippingAddress</servlet-name>
+    <url-pattern>/UpdateShippingAddress</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StoreQuestionDetails</display-name>
+    <servlet-name>StoreQuestionDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.StoreQuestionDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreQuestionDetails</servlet-name>
+    <url-pattern>/StoreQuestionDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchQuestionDetails</display-name>
+    <servlet-name>FetchQuestionDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchQuestionDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchQuestionDetails</servlet-name>
+    <url-pattern>/FetchQuestionDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GetRegistrationOtp</display-name>
+    <servlet-name>GetRegistrationOtp</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.GetRegistrationOtp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetRegistrationOtp</servlet-name>
+    <url-pattern>/GetRegistrationOtp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>RegistrationGardenerServlet</display-name>
+    <servlet-name>RegistrationGardenerServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.RegistrationGardenerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationGardenerServlet</servlet-name>
+    <url-pattern>/RegistrationGardenerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteQuestionDetails</display-name>
+    <servlet-name>DeleteQuestionDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteQuestionDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteQuestionDetails</servlet-name>
+    <url-pattern>/DeleteQuestionDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SaveShippingAdress</display-name>
+    <servlet-name>SaveShippingAdress</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.SaveShippingAdress</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveShippingAdress</servlet-name>
+    <url-pattern>/SaveShippingAdress</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayServiceDetails</display-name>
+    <servlet-name>DisplayServiceDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayServiceDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayServiceDetails</servlet-name>
+    <url-pattern>/DisplayServiceDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>InsertServiceServlet</display-name>
+    <servlet-name>InsertServiceServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.InsertServiceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertServiceServlet</servlet-name>
+    <url-pattern>/InsertServiceServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditServiceDetails</display-name>
+    <servlet-name>EditServiceDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.EditServiceDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditServiceDetails</servlet-name>
+    <url-pattern>/EditServiceDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateServiceDetails</display-name>
+    <servlet-name>UpdateServiceDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateServiceDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServiceDetails</servlet-name>
+    <url-pattern>/UpdateServiceDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteServiceDetails</display-name>
+    <servlet-name>DeleteServiceDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteServiceDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServiceDetails</servlet-name>
+    <url-pattern>/DeleteServiceDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Storefeedback</display-name>
+    <servlet-name>Storefeedback</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.Storefeedback</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Storefeedback</servlet-name>
+    <url-pattern>/Storefeedback</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayFeedback</display-name>
+    <servlet-name>DisplayFeedback</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayFeedback</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayFeedback</servlet-name>
+    <url-pattern>/DisplayFeedback</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ServiceDetailsServlet</display-name>
+    <servlet-name>ServiceDetailsServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.ServiceDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServiceDetailsServlet</servlet-name>
+    <url-pattern>/ServiceDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayGardenerServlet</display-name>
+    <servlet-name>DisplayGardenerServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayGardenerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayGardenerServlet</servlet-name>
+    <url-pattern>/DisplayGardenerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayOrderDetails</display-name>
+    <servlet-name>DisplayOrderDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayOrderDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayOrderDetails</servlet-name>
+    <url-pattern>/DisplayOrderDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DisplayOrderServlet</display-name>
+    <servlet-name>DisplayOrderServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DisplayOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayOrderServlet</servlet-name>
+    <url-pattern>/DisplayOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteFeedbackServlet</display-name>
+    <servlet-name>DeleteFeedbackServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteFeedbackServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteFeedbackServlet</servlet-name>
+    <url-pattern>/DeleteFeedbackServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchOrderDetailsServlet</display-name>
+    <servlet-name>FetchOrderDetailsServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchOrderDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchOrderDetailsServlet</servlet-name>
+    <url-pattern>/FetchOrderDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CashOrderServlet</display-name>
+    <servlet-name>CashOrderServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.CashOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CashOrderServlet</servlet-name>
+    <url-pattern>/CashOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteOrderServlet</display-name>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.DeleteOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOrderServlet</servlet-name>
+    <url-pattern>/DeleteOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateOrderServlet</display-name>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateOrderServlet</servlet-name>
+    <url-pattern>/UpdateOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateServiceAddress</display-name>
+    <servlet-name>UpdateServiceAddress</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.UpdateServiceAddress</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServiceAddress</servlet-name>
+    <url-pattern>/UpdateServiceAddress</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ServiceCODServlet</display-name>
+    <servlet-name>ServiceCODServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.ServiceCODServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServiceCODServlet</servlet-name>
+    <url-pattern>/ServiceCODServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SelectBookedServiceDetails</display-name>
+    <servlet-name>SelectBookedServiceDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.SelectBookedServiceDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectBookedServiceDetails</servlet-name>
+    <url-pattern>/SelectBookedServiceDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Updateservicestatus</display-name>
+    <servlet-name>Updateservicestatus</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.Updateservicestatus</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Updateservicestatus</servlet-name>
+    <url-pattern>/Updateservicestatus</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchServiceBookingDetails</display-name>
+    <servlet-name>FetchServiceBookingDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchServiceBookingDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchServiceBookingDetails</servlet-name>
+    <url-pattern>/FetchServiceBookingDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>AssignGardenerServlet</display-name>
+    <servlet-name>AssignGardenerServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.AssignGardenerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AssignGardenerServlet</servlet-name>
+    <url-pattern>/AssignGardenerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchGardenerServiceList</display-name>
+    <servlet-name>FetchGardenerServiceList</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchGardenerServiceList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchGardenerServiceList</servlet-name>
+    <url-pattern>/FetchGardenerServiceList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchGardenerServiceDetails</display-name>
+    <servlet-name>FetchGardenerServiceDetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchGardenerServiceDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchGardenerServiceDetails</servlet-name>
+    <url-pattern>/FetchGardenerServiceDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchTrendingProduct</display-name>
+    <servlet-name>FetchTrendingProduct</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchTrendingProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchTrendingProduct</servlet-name>
+    <url-pattern>/FetchTrendingProduct</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>BookedPlantsRatio</display-name>
+    <servlet-name>BookedPlantsRatio</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.BookedPlantsRatio</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookedPlantsRatio</servlet-name>
+    <url-pattern>/BookedPlantsRatio</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ServiceRatioServlet</display-name>
+    <servlet-name>ServiceRatioServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.ServiceRatioServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServiceRatioServlet</servlet-name>
+    <url-pattern>/ServiceRatioServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Searchproductdetails</display-name>
+    <servlet-name>Searchproductdetails</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.Searchproductdetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Searchproductdetails</servlet-name>
+    <url-pattern>/Searchproductdetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FetchGardenerServiceDetailsServlet</display-name>
+    <servlet-name>FetchGardenerServiceDetailsServlet</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.FetchGardenerServiceDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchGardenerServiceDetailsServlet</servlet-name>
+    <url-pattern>/FetchGardenerServiceDetailsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Pageofproduct</display-name>
+    <servlet-name>Pageofproduct</servlet-name>
+    <servlet-class>com.thenurserysystem.servlet.Pageofproduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Pageofproduct</servlet-name>
+    <url-pattern>/Pageofproduct</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Security Constraints Start here == added later -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Protected Area</web-resource-name>
+      <url-pattern>/protected/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+      <role-name>Gardener</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Login Configuration -->
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/Login.jsp</form-login-page>
+      <form-error-page>/loginError.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+
+  <!-- Security Roles -->
+  <security-role>
+	  <role-name>User</role-name>
+  </security-role>
+  <security-role>
+      <role-name>Admin</role-name>
+  </security-role>
+  <security-role>
+      <role-name>Gardener</role-name>
+  </security-role>
+
+  <!-- Error Handling -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/Error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/AccessDenied.jsp</location>
+  </error-page>
+  
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+
+  <!-- Security Constraints End here == added later -->
+  
+</web-app>
