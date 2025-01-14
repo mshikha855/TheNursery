@@ -1,0 +1,68 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# IDE Directories #
+/.idea/
+/.vscode/
+/eclipse/
+/nbproject/private/
+/out/
+/target/
+/build/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+/build/
+!gradle-wrapper.jar
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# Temporary Files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+*.~*
+
+# OS-specific Files #
+Thumbs.db
+.DS_Store
+
+# Configuration files
+.env
+.env.local
+
+# Test Coverage Results
+*.coverage
+*.coveragexml
+*.lcov
+*.coverage.data
+jacoco.exec
+
+# Java logs
+hs_err_pid*
