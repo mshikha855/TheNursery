@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.ear
 
@@ -66,3 +66,11 @@ jacoco.exec
 
 # Java logs
 hs_err_pid*
+
+# Eclipse-related files
+.classpath
+.project
+.settings/
+
+# Sass cache files
+WebContent/.sass-cache/
