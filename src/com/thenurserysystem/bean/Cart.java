@@ -6,6 +6,15 @@ public class Cart {
 	private int productID;
 	private int userId;
 
+	public Cart(int cartId, int productId, int userId) {
+		this.cartId = cartId;
+		this.productID = productId;
+		this.userId = userId;
+	}
+
+	public Cart() {
+	}
+
 	public int getCartId() {
 		return cartId;
 	}

@@ -15,7 +15,7 @@ import com.thenurserysystem.service.impl.ServiceImpl;
 
 public class UpdateServiceDetails extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    ServiceService ss=new ServiceImpl();
+    public ServiceService ss=new ServiceImpl();
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -34,7 +34,7 @@ public class UpdateServiceDetails extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	
 		String serviceid=request.getParameter("serviceid");

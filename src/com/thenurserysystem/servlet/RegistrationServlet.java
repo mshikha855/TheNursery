@@ -20,8 +20,8 @@ import com.thenurserysystem.util.ThreadEmail;
  */
 public class RegistrationServlet extends HttpServlet {
 	
-	
-	TheNurseryService ns=new TheNurseryServiceImpl();
+	private static final long serialVersionUID = 1L;
+	public TheNurseryService ns=new TheNurseryServiceImpl();
 	 
     /**
      * @see HttpServlet#HttpServlet()
@@ -34,7 +34,7 @@ public class RegistrationServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String email=request.getParameter("email");
 		
@@ -52,7 +52,7 @@ public class RegistrationServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
 		

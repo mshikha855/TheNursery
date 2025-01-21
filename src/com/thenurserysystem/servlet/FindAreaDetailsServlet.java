@@ -19,7 +19,7 @@ import com.thenurserysystem.service.impl.TheNurseryServiceImpl;
 public class FindAreaDetailsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	TheNurseryService ns=new TheNurseryServiceImpl();
+	public TheNurseryService ns=new TheNurseryServiceImpl();
 	
     /**
      * @see HttpServlet#HttpServlet()
@@ -32,7 +32,7 @@ public class FindAreaDetailsServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
 	
@@ -46,7 +46,7 @@ public class FindAreaDetailsServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
