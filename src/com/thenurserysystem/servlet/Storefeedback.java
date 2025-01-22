@@ -18,7 +18,7 @@ import com.thenurserysystem.service.impl.ProductServiceImpl;
 public class Storefeedback extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	public ProductService ps=new ProductServiceImpl();
+	ProductService ps=new ProductServiceImpl();
 	
     /**
      * @see HttpServlet#HttpServlet()
@@ -31,7 +31,7 @@ public class Storefeedback extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
@@ -39,7 +39,7 @@ public class Storefeedback extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		Feedback fb=new Feedback();
 		
@@ -48,13 +48,6 @@ public class Storefeedback extends HttpServlet {
 		String pid=request.getParameter("pid");
 		
 		HttpSession httpsession=request.getSession(false);
-		
-		//Added code on 21-01-2025 to handle null pointer exception in testcase
-		if (httpsession == null || httpsession.getAttribute("loginDetails") == null) {
-		    response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "User not logged in.");
-		    return;
-		}
-		
 		User u=(User)httpsession.getAttribute("loginDetails");
 		
 		int uid=u.getUserid();

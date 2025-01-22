@@ -30,9 +30,9 @@ public class UpdateShippingAddress extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
 	TheNurseryService ns=new TheNurseryServiceImpl();
-	public CartService c=new CartServiceImpl();
-    public ProductService ps=new ProductServiceImpl();
-    public OrderService os=new OrderServiceImpl();
+	CartService c=new CartServiceImpl();
+    ProductService ps=new ProductServiceImpl();
+    OrderService os=new OrderServiceImpl();
     
     public UpdateShippingAddress() {
         super();
@@ -45,7 +45,7 @@ public class UpdateShippingAddress extends HttpServlet {
 	}
 
 	
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		System.out.println("Servlet called Update shipping");
 		String areaname=request.getParameter("areaname");

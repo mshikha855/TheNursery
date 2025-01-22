@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -81,5 +82,13 @@ public class AssignGardenerServletTest {
         verify(mockServiceService).assignGardenerDetails(any(ServiceDetails.class));
         // Verify no redirect happens
         verify(mockResponse, never()).sendRedirect("BookedServiceList.jsp");
+    }
+	   
+    @Test
+    public void testHamcrest() {
+        int a = 5;
+        int b = 5;
+        
+        Assert.assertTrue("Test passed", true);
     }
 }

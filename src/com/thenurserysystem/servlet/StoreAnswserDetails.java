@@ -29,33 +29,19 @@ public class StoreAnswserDetails extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 
 		HttpSession httpSession=request.getSession(false);
 		
-		//Added code on 21-01-2025 to handle null pointer exception in testcase
-		if (httpSession == null) {
-            // Handle session being null, e.g., redirect to login page
-            response.sendRedirect("loginPage.jsp");  // Or send an error response
-            return;  // Stop execution
-        }
-		
 		User u1=(User) httpSession.getAttribute("loginDetails");
-		
-		//Added code on 21-01-2025 to handle null pointer exception in testcase
-		if (u1 == null) {
-            // Handle the case where the user is not found in the session
-            response.sendRedirect("loginPage.jsp");  // Or send an error response
-            return;  // Stop execution
-        }
 		
 		String questionid=request.getParameter("questionid");
 		

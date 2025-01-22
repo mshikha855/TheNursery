@@ -4,12 +4,6 @@ public class Area {
 
 	int pincode;
 	String areaname;
-	
-	public Area() {}
-	public Area(int pincode, String areaname) {
-		this.pincode = pincode;
-		this.areaname = areaname;
-	}
 	public int getPincode() {
 		return pincode;
 	}

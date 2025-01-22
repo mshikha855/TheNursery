@@ -20,7 +20,7 @@ import com.thenurserysystem.service.impl.ServiceImpl;
  */
 public class UpdateServiceAddress extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    public ServiceService ss=new ServiceImpl();
+    ServiceService ss=new ServiceImpl();
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -39,7 +39,7 @@ public class UpdateServiceAddress extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		System.out.println("Update service servlet called");
 		

@@ -29,25 +29,11 @@ public class StoreQuestionDetails extends HttpServlet {
 	}
 
 	
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		HttpSession httpSession=request.getSession(false);
 		
-		//code added to handle null pointer exception on 21-01-2025
-		if (httpSession == null) {
-	        // Handle missing session (e.g., redirect to login or error page)
-	        response.sendRedirect("login.jsp");
-	        return;
-	    }
-		
 		User u1=(User) httpSession.getAttribute("loginDetails");
-		
-		//code added to handle null pointer exception on 21-01-2025
-		if (u1 == null) {
-	        // Handle missing user details in the session
-	        response.sendRedirect("login.jsp");
-	        return;
-	    }
 		
 		String question=request.getParameter("message");
 		

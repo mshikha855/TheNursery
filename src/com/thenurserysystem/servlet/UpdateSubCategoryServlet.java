@@ -22,7 +22,7 @@ public class UpdateSubCategoryServlet extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
 	
-	public SubCategoryService cs=new SubCategoryServiceImpl();
+	SubCategoryService cs=new SubCategoryServiceImpl();
     public UpdateSubCategoryServlet() {
         super();
         // TODO Auto-generated constructor stub
@@ -31,7 +31,7 @@ public class UpdateSubCategoryServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
@@ -39,7 +39,7 @@ public class UpdateSubCategoryServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		int id=Integer.parseInt(request.getParameter("subcategoryid"));
 		String subCatName=request.getParameter("subcategoryname");
